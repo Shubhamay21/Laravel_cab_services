@@ -22,7 +22,7 @@
                             </div>
                         </div>
                     </div>               
-                    <div class="form-group mt-4 mb-0"><button class="btn btn-primary btn-block" type="submit">Add Category</button></div>
+                    <div class="form-group mt-4 mb-0"><button class="btn btn-primary btn-block" type="submit">Add City</button></div>
                     <input type="hidden" name="id" value="{{$id}}">
                 </form>
             </div>

@@ -17,7 +17,7 @@
         @endif
     </div>
     <div class=" mb-4">
-    <a href="city_list/manage_city_list"><button type="button" class="btn btn-primary" >Add Drivers</button></a>
+    <a href="city_list/manage_city_list"><button type="button" class="btn btn-primary" >Add Cities</button></a>
     </div>
     
     <div class="card mb-4">
@@ -36,9 +36,10 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @php($i =0)
                     @foreach($data as $list)
                         <tr>
-                            <td>{{$list->id}}</td>
+                            <td>{{++$i}}</td>
                             <td>{{$list->operate_city}}</td>
                             <td>
                             <a href="{{url('admin/city_list/manage_city_list/')}}/{{$list->id}}"><label class="badge badge-success hand_cursor" style="padding:10px;">Edit</label></a>

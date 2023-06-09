@@ -82,7 +82,7 @@ class CabController extends Controller
            $image=$request->file('image');
            $ext=$image->extension(); //to find out image exe.
            $image_name=time().'.'.$ext; //to make name of image.
-           $image->storeAs('/public/media',$image_name);
+           $image->storeAs('img',$image_name);
            $model->image=$image_name;
        }
 

@@ -47,7 +47,8 @@
                             <td>{{$list->operate_city_id}}</td>
                             <td>
                                 @if($list->image!='')
-                                    <img src="{{asset('storage/media/'.$list->image)}}" style="width:100px" alt="cab"></td>
+                                <img src=".../img.{{$list->image}})" width="100px" alt="cab"></td>
+                               
                                 @endif
                                 
                             <td>

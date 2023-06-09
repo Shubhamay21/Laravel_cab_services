@@ -56,11 +56,11 @@ Route::group(['middleware'=>'admin_auth'],function(){
     Route::get('admin/cab_category/status/{status}/{id}',[CabCatagoryController::class,'status']);// make cntrller fr every categry
 
     Route::get('admin/cab_list',[CabController::class,'index']);// make cntrller fr every categry
-    // Route::get('admin/cab_list/manage_cab_list',[CabController::class,'manage_cab_list']);// make cntrller fr every categry
-    // Route::get('admin/cab_list/manage_cab_list/{id}',[CabController::class,'manage_cab_list']);// make cntrller fr every categry
-    // Route::post('admin/cab_list/manage_cab_list_process',[CabController::class,'manage_cab_list_process'])->name('cab_list.manage_cab_list_process');// make cntrller fr every categry
-    // Route::get('admin/cab_list/delete/{id}',[CabController::class,'delete']);// make cntrller fr every categry
-    // Route::get('admin/cab_list/status/{status}/{id}',[CabController::class,'status']);// make cntrller fr every categry
+    Route::get('admin/cab_list/manage_cab_list',[CabController::class,'manage_cab_list']);// make cntrller fr every categry
+    Route::get('admin/cab_list/manage_cab_list/{id}',[CabController::class,'manage_cab_list']);// make cntrller fr every categry
+    Route::post('admin/cab_list/manage_cab_list_process',[CabController::class,'manage_cab_list_process'])->name('cab_list.manage_cab_list_process');// make cntrller fr every categry
+    Route::get('admin/cab_list/delete/{id}',[CabController::class,'delete']);// make cntrller fr every categry
+    Route::get('admin/cab_list/status/{status}/{id}',[CabController::class,'status']);// make cntrller fr every categry
 
     Route::get('admin/cab_price',[CabPricesController::class,'index']);// make cntrller fr every categry
     // Route::get('admin/cab_price/manage_cab_price',[CabPricesController::class,'manage_cab_price']);// make cntrller fr every categry
@@ -76,9 +76,9 @@ Route::group(['middleware'=>'admin_auth'],function(){
     // Route::get('admin/driver_list/status/{status}/{id}',[DriverController::class,'status']);
 
     Route::get('admin/city_list',[OperatedCityController::class,'index']);// make cntrller fr every categry
-    // Route::get('admin/city_list/manage_city_list',[OperatedCityController::class,'manage_city_list']);// make cntrller fr every categry
-    // Route::get('admin/city_list/manage_city_list/{id}',[OperatedCityController::class,'manage_city_list']);// make cntrller fr every categry
-    // Route::post('admin/city_list/manage_city_list_process',[OperatedCityController::class,'manage_city_list_process'])->name('city_list.manage_city_list_process');// make cntrller fr every categry
-    // Route::get('admin/city_list/delete/{id}',[OperatedCityController::class,'delete']);// make cntrller fr every categry
-    // Route::get('admin/city_list/status/{status}/{id}',[OperatedCityController::class,'status']);
+    Route::get('admin/city_list/manage_city_list',[OperatedCityController::class,'manage_city_list']);// make cntrller fr every categry
+    Route::get('admin/city_list/manage_city_list/{id}',[OperatedCityController::class,'manage_city_list']);// make cntrller fr every categry
+    Route::post('admin/city_list/manage_city_list_process',[OperatedCityController::class,'manage_city_list_process'])->name('city_list.manage_city_list_process');// make cntrller fr every categry
+    Route::get('admin/city_list/delete/{id}',[OperatedCityController::class,'delete']);// make cntrller fr every categry
+    Route::get('admin/city_list/status/{status}/{id}',[OperatedCityController::class,'status']);
 });
